@@ -129,7 +129,7 @@ function Servisec() {
             <div className="img"><img src={samkara} alt="" /></div>
             <div className="content">
                 <h3>اعمال السمكره</h3>
-                <p> صلاح هيكل السيارة وسمكرة احترافية</p>
+                <p> اصلاح هيكل السيارة وسمكرة احترافية</p>
                 <button onClick={()=>setseven(!sevenisopen)}>{sevenisopen ? "اعرض اقل" : "اعرض المزيد"}</button>
                 {sevenisopen? 
                 <div>
