@@ -1,0 +1,44 @@
+.landing{
+    width: 100vw;
+    height:calc(100vh - 80px);
+    background-size: cover;
+    transition: all .3s ease-in;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.landing::before{
+content: "";
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.377);
+position: absolute;
+top: 0;
+left: 0;
+pointer-events: none;
+}
+.landing h1{
+    padding-top:50px ;
+color: #fdb513;
+font-size: 50px;
+z-index: 1;
+}
+.landing .writing{
+    font-size: 40px;
+    color: rgb(245, 178, 33);
+    font-weight: bold;
+    z-index: 1;
+}
+
+@media (max-width:768px) {
+  .landing .writing{
+        font-size: 20px;
+        text-align: center;
+    }
+    .landing{
+        background-image: url("/modern.jpg") !important;
+    }
+
+}

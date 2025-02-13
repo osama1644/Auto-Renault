@@ -1,0 +1,42 @@
+.map .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.map{
+   padding-bottom: 50px;
+}
+.map button{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fdb513;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
+    text-decoration: none;
+}
+.map button:hover{
+    box-shadow:  0 0 10px rgba(255, 255, 255, 0.501);
+}
+.address{
+    color: #fdb513;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+@media (max-width:768px) {
+    .map .container{
+        flex-direction: column;
+    }
+    .iframe{
+        margin-bottom: 100px;
+    }
+    .address{
+        align-items: center;
+        text-align: center;
+    }
+}

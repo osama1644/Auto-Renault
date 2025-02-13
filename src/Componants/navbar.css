@@ -1,0 +1,101 @@
+.nav .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.nav{
+    position: relative;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo p {
+    color: #fdb513;
+}
+.nav img {
+    max-width: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.nav .img {
+    width: 50px;
+    margin-right: 10px;
+}
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+.nav ul li {
+    padding-right: 15px;
+}
+.nav ul a {
+    text-decoration: none;
+    color: white;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav ul a:hover,
+.nav ul a.active{
+    color: #fdb513;
+    transition: .3s;
+}
+.icon{
+    color: white;
+    display:none ;
+    cursor: pointer;
+    font-size: 25px;
+}
+.icon:hover{
+    color: #fdb513;
+    transition: .3s;
+}
+@media (max-width:768px) {
+    
+    .icon{
+        display: block;
+    }
+    
+        .nav ul {
+            position: absolute;
+            top: 65px;
+            right: 0;
+            width: 100%;
+            background: #333;
+            flex-direction: column;
+            text-align: center;
+            z-index: 1;
+            opacity: 0; 
+          transform: translateY(-20px);
+          transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            pointer-events: none; 
+          }
+   
+          .nav ul li {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+            padding: 12px 0;
+            transition:  0.3s ease-in-out;
+          }
+          
+          /* إزالة الحد من آخر عنصر */
+          .nav ul li:last-child {
+            border-bottom: none;
+          }
+          
+          /* تأثير عند تمرير الماوس */
+          .nav ul li:hover {
+            background: rgba(255, 255, 255, 0.1);
+          }
+          
+    .nav .open{
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: all;
+    }
+}

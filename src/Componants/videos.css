@@ -1,0 +1,24 @@
+.videos {
+    background-color: #111; 
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+ .videos .container {
+    display: flex;
+    justify-content: center; 
+    gap: 20px;  
+    flex-wrap: wrap; 
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+  }
+  
+  video {
+    width: 100%;
+    max-width: 400px; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  }
+  
